@@ -1,50 +1,52 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var slideDurationSetting = 800,
-    currentSlideNumber = 0,
-    totalSlideNumber = document.getElementsByClassName('page').length,
-    ticking = false
+  window.scroll(0, 0)
+  var pages = document.querySelectorAll('section.page'),
+    currentPage = 0,
+    totalPages = pages.length - 1,
+    watchScroll = true
 
-  window.onscroll = throttle(function() {
-    if (!ticking) {
-      if (this.oldScroll > this.scrollY) {
-        ticking = true
-        if (currentSlideNumber !== 0) {
-          currentSlideNumber--
-          previousItem()
+  window.addEventListener('scroll', function() {
+    if (watchScroll) {
+      if (this.oldScroll < this.scrollY) {
+        // currently scrolling down
+        if (currentPage < totalPages) {
+          handlePageDown()
         }
-        slideDurationTimeout(slideDurationSetting)
       } else {
-        ticking = true
-        if (currentSlideNumber !== totalSlideNumber - 1) {
-          currentSlideNumber++
-          nextItem()
+        // currently scrolling up
+        if (currentPage > 0) {
+          handlePageUp()
         }
-        slideDurationTimeout(slideDurationSetting)
       }
     }
-    window.scrollTo(0, 1)
     this.oldScroll = this.scrollY
-  }, 100)
+  })
 
-  function slideDurationTimeout(slideDuration) {
+  function handlePageDown() {
+    pages[currentPage].classList.add('down-scroll')
+    nextPage = currentPage + 1
+    resetScroll()
+    setCurrentPage(nextPage)
+  }
+
+  function handlePageUp() {
+    pages[currentPage - 1].classList.remove('down-scroll')
+    nextPage = currentPage - 1
+    resetScroll()
+    setCurrentPage(nextPage)
+  }
+
+  function resetScroll() {
     setTimeout(function() {
-      ticking = false
-    }, slideDuration)
+      watchScroll = false
+      window.scroll(0, 10)
+    }, 100)
   }
 
-  function nextItem() {
-    const $previousSlide = document.getElementsByClassName('page')[
-      currentSlideNumber - 1
-    ]
-    $previousSlide.classList.remove('up-scroll')
-    $previousSlide.classList.add('down-scroll')
-  }
-
-  function previousItem() {
-    const $currentSlide = document.getElementsByClassName('page')[
-      currentSlideNumber
-    ]
-    $currentSlide.classList.remove('down-scroll')
-    $currentSlide.classList.add('up-scroll')
+  function setCurrentPage(setPageAs) {
+    setTimeout(function() {
+      currentPage = setPageAs
+      watchScroll = true
+    }, 400)
   }
 })

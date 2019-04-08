@@ -4,7 +4,6 @@ const Index = () => (
   <div>
     <Head>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <script type="text/javascript" src="/static/throttle.js" />
       <script type="text/javascript" src="/static/index.js" />
     </Head>
     <div className="container">
@@ -39,7 +38,7 @@ const Index = () => (
       body {
         margin: 0;
         padding: 0;
-        height: 101vh;
+        height: 102vh;
       }
       .page {
         background-size: cover;
