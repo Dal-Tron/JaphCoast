@@ -69,7 +69,7 @@ const SectionTwo = () => (
       }
       .tile12 {
         background-image: url('http://bit.ly/2Z2GuXB');
-        background-position-y: 50%;
+        background-position-y: 100% !important;
       }
 
       @media (max-width: 1000px) {
