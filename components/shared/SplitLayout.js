@@ -10,7 +10,7 @@ const SplitLayout = props => (
     </div>
     <style jsx>{`
       .main-content-container {
-        width: 100rem;
+        min-width: 90rem;
         max-height: 80rem;
       }
       .split-wrapper {

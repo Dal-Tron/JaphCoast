@@ -1,7 +1,7 @@
 const SectionOne = () => (
   <section className="section-one">
     <div className="content-container content-container-one">
-      <div className="titles-container-one">
+      <div className="abs">
         <div className="title-one">Raph & Jeff</div>
         <div className="title subtitle-one">Mexico 2020</div>
       </div>
@@ -27,14 +27,6 @@ const SectionOne = () => (
       }
       .content-container-one {
         background: rgba(110, 104, 148, 0.9);
-      }
-      .titles-container-one {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        text-align: center;
-        width: 100%;
       }
       .title-one {
         font-size: 5rem;

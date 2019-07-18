@@ -38,7 +38,6 @@ const Index = () => (
         padding: 0;
         height: 100vh;
         overflow: hidden;
-        background-color: rgba(137, 224, 249, 1);
       }
       a {
         text-decoration: none;
@@ -59,8 +58,8 @@ const Index = () => (
         scroll-snap-points-y: repeat(100vh);
         -ms-scroll-snap-type: y mandatory;
         scroll-snap-type: y mandatory;
-        height: 100vh;
         overflow: scroll;
+        height: 100vh;
       }
       section {
         height: 100vh;
