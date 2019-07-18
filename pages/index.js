@@ -17,9 +17,6 @@ const Index = () => (
     <SectionFive />
     <section className="lastSection" />
     <style jsx global>{`
-       {
-        /* GENERAL */
-      }
       @font-face {
         font-family: WestburySignature;
         src: url('/static/fonts/WestburySignature.otf') format('opentype');
@@ -50,9 +47,10 @@ const Index = () => (
       .abs {
         position: absolute;
         top: 50%;
+        left: 50%;
         text-align: center;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
       }
       .section-container {
         -ms-scroll-snap-type: mandatory;
@@ -103,6 +101,7 @@ const Index = () => (
         padding-top: 10px;
         padding-bottom: 10px;
         cursor: pointer;
+        text-align: center;
       }
       .lastSection {
         display: none;
