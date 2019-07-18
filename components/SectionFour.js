@@ -5,7 +5,7 @@ import SplitLayout from './shared/SplitLayout'
 const leftElement = (
   <React.Fragment>
     <div className="cake" />
-    <div className="main-button see-marival-button">
+    <div className="main-button secondary-button see-marival-button">
       <a href="https://www.marival.com/" target="_blank">
         Marival
       </a>
@@ -27,10 +27,11 @@ const leftElement = (
         margin-top: 2rem;
       }
       .see-marival-button {
-        color: white;
-        font-size: 2rem;
-        border: 1px solid white;
         margin-top: 1rem;
+      }
+      .see-marival-button:hover {
+        background-color: #e5f6ff;
+        color: #e4c39a;
       }
       .marival-details {
         font-family: LatoHairLine;

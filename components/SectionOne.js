@@ -18,7 +18,7 @@ const SectionOne = () => (
           }, 1000)
         }}
       >
-        <div className="main-button see-info-button">See Info</div>
+        <div className="main-button">See Info</div>
       </div>
     </div>
     <style jsx>{`
@@ -61,10 +61,6 @@ const SectionOne = () => (
         width: 100%;
         text-align: center;
         bottom: 150px;
-      }
-      .see-info-button:hover {
-        background-color: #c2d2f5;
-        color: rgba(110, 104, 148, 1);
       }
     `}</style>
   </section>

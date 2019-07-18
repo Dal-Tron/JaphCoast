@@ -103,6 +103,14 @@ const Index = () => (
         cursor: pointer;
         text-align: center;
       }
+      .main-button:hover {
+        background-color: #c2d2f5;
+        color: rgba(110, 104, 148, 1);
+      }
+      .secondary-button {
+        color: white;
+        border: 1px solid white;
+      }
       .lastSection {
         display: none;
       }

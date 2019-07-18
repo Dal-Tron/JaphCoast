@@ -44,7 +44,9 @@ const rightElement = (
           .scrollIntoView({ block: 'end', behavior: 'smooth' })
       }}
     >
-      <div className="main-button see-date-button">When & Where</div>
+      <div className="main-button secondary-button see-date-button">
+        When & Where
+      </div>
     </div>
     <style jsx>{`
       .dolphin {
@@ -58,12 +60,11 @@ const rightElement = (
         margin-top: 4rem;
       }
       .see-date-button {
-        color: white;
         width: 320px;
       }
       .see-date-button:hover {
         background-color: #e5f6ff;
-        color: rgba(137, 224, 249, 0.9);
+        color: #44bee0;
       }
     `}</style>
   </React.Fragment>
@@ -72,7 +73,7 @@ const rightElement = (
 const SectionThree = () => (
   <SplitLayout
     id="info-section"
-    backgroundColor="#94e3f9"
+    backgroundColor="#44BEE0"
     leftElement={leftElement}
     rightElement={rightElement}
   />
