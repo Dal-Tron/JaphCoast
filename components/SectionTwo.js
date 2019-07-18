@@ -1,5 +1,5 @@
 const SectionTwo = () => (
-  <div>
+  <section id="photo-section" className="section-two">
     <div className="container">
       <div className="imageGrid">
         <div className="tile tile1" />
@@ -84,7 +84,7 @@ const SectionTwo = () => (
         }
       }
     `}</style>
-  </div>
+  </section>
 )
 
 export default SectionTwo
