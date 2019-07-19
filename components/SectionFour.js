@@ -109,6 +109,15 @@ const rightElement = (
         background-color: #e5f6ff;
         color: #e4c39a;
       }
+      @media (max-width: 1200px) {
+        .title-four {
+          padding-right: 2rem;
+        }
+        .subtitle-four {
+          padding-right: 2rem;
+          font-size: 1.6rem;
+        }
+      }
     `}</style>
   </React.Fragment>
 )

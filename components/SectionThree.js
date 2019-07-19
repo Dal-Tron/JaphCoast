@@ -18,7 +18,7 @@ const leftElement = (
       .title-three {
         color: white;
         text-align: left;
-        margin-left: 10rem;
+        padding-left: 10rem;
       }
       .subtitle-three {
         font-family: LatoHairLine;
@@ -28,6 +28,22 @@ const leftElement = (
         padding-left: 10rem;
         letter-spacing: 1px;
         font-weight: 400;
+      }
+      @media (max-width: 1200px) {
+        .title-three {
+          padding-left: 2rem;
+        }
+        .subtitle-three {
+          padding-left: 2rem;
+        }
+      }
+      @media (max-width: 950px) {
+        .title-three {
+          padding-left: 5rem;
+        }
+        .subtitle-three: {
+          padding-left: 4rem;
+        }
       }
     `}</style>
   </React.Fragment>

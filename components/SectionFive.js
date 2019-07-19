@@ -128,6 +128,17 @@ const SectionFive = () => (
         margin-right: auto;
         margin-bottom: 2rem;
       }
+      @media (max-width: 1200px) {
+        .left-container {
+          font-size: 1.2rem;
+        }
+        .right-container {
+          font-size: 1rem;
+        }
+        .final-note {
+          font-size: 0.8rem;
+        }
+      }
     `}</style>
   </section>
 )
