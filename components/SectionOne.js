@@ -54,6 +54,17 @@ const SectionOne = () => (
         text-align: center;
         bottom: 150px;
       }
+      @media (max-width: 700px) {
+        .title-one {
+          font-size: 3rem;
+        }
+        .title {
+          font-size: 1rem;
+        }
+        .see-info-button-container {
+          bottom: 4rem;
+        }
+      }
     `}</style>
   </section>
 )

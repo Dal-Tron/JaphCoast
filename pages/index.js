@@ -114,6 +114,10 @@ const Index = () => (
         display: none;
       }
       @media (max-width: 700px) {
+        .main-button {
+          font-size: 1rem;
+          width: 10rem;
+        }
         .lastSection {
           display: block !important;
         }
