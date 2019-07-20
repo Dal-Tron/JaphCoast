@@ -34,7 +34,7 @@ const SplitLayout = props => (
       }
       @media (max-width: 950px) {
         .main-content-container {
-          min-width: 40rem;
+          min-width: 60rem;
         }
       }
     `}</style>

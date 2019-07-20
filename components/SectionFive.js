@@ -61,9 +61,7 @@ const SectionFive = () => (
         background: rgba(110, 104, 148, 0.9);
       }
       .costs-wrapper {
-        width: 100%;
-        height: 100%;
-        margin-top: 5%;
+        min-width: 80rem;
       }
       .costs-container {
         position: relative;

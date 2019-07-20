@@ -36,9 +36,11 @@ const SectionOne = () => (
         font-weight: 400;
         letter-spacing: 3px;
         padding-bottom: 2rem;
+        min-width: 21rem;
       }
       .subtitle-one {
         color: #c2d2f5;
+        font-size: 2rem !important;
       }
       .title {
         font-size: 3rem;
