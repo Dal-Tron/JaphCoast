@@ -28,7 +28,7 @@ const leftElement = (
         text-align: left;
         padding-left: 10rem;
         letter-spacing: 1px;
-        font-weight: 400;
+        font-weight: 800;
       }
       @media (max-width: 1200px) {
         .title-three {
@@ -119,7 +119,7 @@ const mobileContent = (
           .scrollIntoView({ block: 'end', behavior: 'smooth' })
       }}
     >
-      <div className="main-mobile-button secondary-button see-date-button">
+      <div className="main-button secondary-button see-when-button">
         When & Where
       </div>
     </div>
@@ -148,23 +148,12 @@ const mobileContent = (
         margin-bottom: 2rem;
         margin-top: 20%;
       }
-      .main-mobile-button {
-        font-family: LatoHairLine;
-        text-transform: uppercase;
-        color: #44bee0;
-        font-size: 1.2rem;
-        width: 220px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        cursor: pointer;
-        text-align: center;
-        background: white;
-      }
-      .see-date-button {
+      .see-when-button {
         margin-top: 4rem;
+      }
+      .see-when-button:hover {
+        background-color: #e5f6ff;
+        color: #44bee0;
       }
     `}</style>
   </div>

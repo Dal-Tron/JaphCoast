@@ -10,7 +10,7 @@ const MobileLayout = props => (
         padding-right: 5%;
       }
       .wrapper {
-        min-width: 36rem;
+        min-width: 34rem;
         padding-top: 3%;
         margin-left: auto;
         margin-right: auto;

@@ -40,7 +40,7 @@ const SectionOne = () => (
       }
       .subtitle-one {
         color: #c2d2f5;
-        font-size: 2rem !important;
+        font-size: 3rem !important;
       }
       .title {
         font-size: 3rem;

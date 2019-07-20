@@ -4,7 +4,7 @@ import SectionOne from '../components/SectionOne'
 import SectionTwo from '../components/SectionTwo'
 import { SectionThree, MobileSectionThree } from '../components/SectionThree'
 import { SectionFour, MobileSectionFour } from '../components/SectionFour'
-import SectionFive from '../components/SectionFive'
+import { SectionFive, MobileSectionFive } from '../components/SectionFive'
 
 class Index extends Component {
   state = {
@@ -37,12 +37,11 @@ class Index extends Component {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        {/* <SectionOne />
-        <SectionTwo /> */}
+        {/* <SectionOne /> */}
+        {/* <SectionTwo /> */}
         {/* {this.state.width < 650 ? <MobileSectionThree /> : <SectionThree />} */}
-        {this.state.width < 650 ? <MobileSectionFour /> : <SectionFour />}
-        <SectionFive />
-        <section className="lastSection" />
+        {/* {this.state.width < 650 ? <MobileSectionFour /> : <SectionFour />} */}
+        {this.state.width < 650 ? <MobileSectionFive /> : <SectionFive />}
         <style jsx global>{`
           @font-face {
             font-family: WestburySignature;

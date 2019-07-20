@@ -14,7 +14,7 @@ const leftElement = (
     <div className="marival-details">
       <div className="trip-dates">May 23rd – May 30th, 2020</div>
       <div className="wedding-day-title">Wedding Day</div>
-      <div className="trip-dates">May 25th, 2020</div>
+      <div className="trip-dates wedding-date">May 25th, 2020</div>
     </div>
     <style jsx>{`
       .cake {
@@ -37,9 +37,10 @@ const leftElement = (
       .marival-details {
         font-family: LatoHairLine;
         color: white;
-        font-size: 2rem;
+        font-size: 2.4rem;
         text-align: center;
         letter-spacing: 1px;
+        font-weight: 800;
       }
       .trip-dates {
         margin-top: 1rem;
@@ -48,6 +49,11 @@ const leftElement = (
         font-family: WestburySignature;
         margin-top: 1rem;
         font-size: 4rem;
+        color: white;
+      }
+      .wedding-day {
+        color: white;
+        weight: 800;
       }
     `}</style>
   </React.Fragment>
@@ -94,11 +100,11 @@ const rightElement = (
       .subtitle-four {
         font-family: LatoHairLine;
         color: white;
-        font-size: 2rem;
+        font-size: 2.4rem;
         text-align: right;
         padding-right: 10rem;
         letter-spacing: 1px;
-        font-weight: 400;
+        font-weight: 800;
       }
       .see-costs-button {
         color: white;
@@ -189,8 +195,8 @@ const mobileContent = (
       }
       .mobile-cake {
         background-image: url(/static/images/cake.svg);
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
         background-size: cover;
         margin-left: auto;
         margin-right: auto;
@@ -219,6 +225,8 @@ const mobileContent = (
       }
       .wedding-day {
         font-size: 2.1rem;
+        color: white;
+        font-weight: 800;
       }
       .subtitle-four {
         min-width: 30rem;
@@ -257,7 +265,7 @@ const mobileContent = (
         margin-bottom: 0.5rem;
       }
       .marival-title-container {
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
       .marival-title {
         font-size: 2rem;
@@ -271,7 +279,7 @@ const mobileContent = (
         float: right;
         text-align: right;
         margin-top: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
       }
       .mobile-subtitle {
         font-family: LatoHairLine;
@@ -285,9 +293,6 @@ const mobileContent = (
       }
       .see-details-button-container {
         clear: both;
-      }
-      .see-details-button {
-        margin-top: 1rem;
       }
       .see-details-button:hover {
         background-color: #e5f6ff;
