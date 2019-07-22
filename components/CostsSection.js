@@ -6,7 +6,8 @@ export const CostsSection = props => (
   >
     <div className="costs-wrapper abs">
       <div className="costs-container">
-        <div className="title title-five">Due Dates</div>
+        <div className="mobile-booking" />
+        <div className="title title-five">Deposit Dates</div>
         <div className="title left-container">
           <div className="required left-item">$500 USD deposit is required</div>
           <div className="required left-item">The full amount is due by</div>
@@ -67,6 +68,15 @@ export const CostsSection = props => (
       }
       .costs-container {
         position: relative;
+      }
+      .mobile-booking {
+        background-image: url(/static/images/booking.svg);
+        width: 16rem;
+        height: 16rem;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
       }
       .sub-container {
         height: 13rem;

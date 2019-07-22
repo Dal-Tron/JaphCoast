@@ -49,7 +49,7 @@ class Index extends Component {
           <InfoSection height={height} />
         )}
         {this.state.width < 650 ? (
-          <WhenSectionMobile height={height} />
+          <WhenSectionMobile height={height + 100} />
         ) : (
           <WhenSection height={height} />
         )}
@@ -81,6 +81,7 @@ class Index extends Component {
             height: 100vh;
             overflow-y: scroll;
             font-size: 62.5%;
+            background-color: #7c769e;
           }
           a {
             text-decoration: none;
@@ -108,6 +109,11 @@ class Index extends Component {
             text-transform: uppercase;
             font-weight: 400;
             letter-spacing: 3px;
+          }
+          .mobile-title {
+            color: white;
+            text-align: center;
+            font-size: 2.6rem;
           }
           .first-letter {
             font-size: 2.2rem;
@@ -146,6 +152,10 @@ class Index extends Component {
           }
           .lastSection {
             display: none;
+          }
+          .clip-path-1 {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
           }
           @media (max-width: 700px) {
             .main-button {

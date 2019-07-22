@@ -1,7 +1,9 @@
+import React from 'react'
+
 import MobileLayout from '../layout/MobileLayout'
 
 const mobileContent = (
-  <div className="wrapper">
+  <div className="info-section">
     <div className="mobile-dolphin" />
     <div className="title mobile-title">Info</div>
     <div className="mobile-subtitle">
@@ -18,7 +20,7 @@ const mobileContent = (
       onClick={() => {
         document
           .getElementById('when-section')
-          .scrollIntoView({ block: 'end', behavior: 'smooth' })
+          .scrollIntoView({ block: 'start', behavior: 'smooth' })
       }}
     >
       <div className="main-button secondary-button see-when-button">
@@ -26,9 +28,15 @@ const mobileContent = (
       </div>
     </div>
     <style jsx>{`
-      .mobile-title {
-        color: white;
-        text-align: center;
+      .mobile-dolphin {
+        background-image: url(/static/images/dolphin.svg);
+        width: 12rem;
+        height: 12rem;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-top: 6rem;
       }
       .mobile-subtitle {
         font-family: LatoHairLine;
@@ -39,16 +47,6 @@ const mobileContent = (
         font-weight: 400;
         padding-left: 2rem;
         padding-right: 2rem;
-      }
-      .mobile-dolphin {
-        background-image: url(/static/images/dolphin.svg);
-        width: 12rem;
-        height: 12rem;
-        background-size: cover;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2rem;
-        margin-top: 20%;
       }
       .see-when-button {
         margin-top: 4rem;
@@ -64,8 +62,8 @@ const mobileContent = (
 export const InfoSectionMobile = props => (
   <MobileLayout
     id="info-section"
-    backgroundColor="#44BEE0"
+    style={{ backgroundColor: '#5189BC', height: props.height, zIndex: 2 }}
     content={mobileContent}
-    height={props.height}
+    className="section clip-path-1"
   />
 )

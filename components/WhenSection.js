@@ -65,7 +65,7 @@ const rightElement = (
       <div className="first-letter">For</div> those of you that are able to
       come, we have organized our wedding at the Marival in Nuevo Vallarta, just
       outside of Puerto Vallarta.
-      <p>
+      <div>
         The package we’ve organized costs just under{' '}
         <div className="first-letter">$1600</div>, and includes:
         <div dir="rtl">
@@ -76,7 +76,7 @@ const rightElement = (
             <li>one checked bag</li>
           </ul>
         </div>
-      </p>
+      </div>
       Check out our detailed breakdown of the costs involved, as well as deposit
       amounts and payment dates.
       <div

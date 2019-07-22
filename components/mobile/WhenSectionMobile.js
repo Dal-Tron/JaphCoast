@@ -1,7 +1,9 @@
+import React from 'react'
+
 import MobileLayout from '../layout/MobileLayout'
 
 const mobileContent = (
-  <div className="mobile-section-four-wrapper">
+  <React.Fragment>
     <div className="mobile-cake" />
     <div className="title mobile-title">When & Where</div>
     <div className="marival-details">
@@ -50,11 +52,6 @@ const mobileContent = (
       </div>
     </div>
     <style jsx>{`
-      .mobile-section-four-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 2rem;
-      }
       .mobile-cake {
         background-image: url(/static/images/cake.svg);
         width: 10rem;
@@ -63,11 +60,7 @@ const mobileContent = (
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1rem;
-      }
-      .mobile-title {
-        color: white;
-        text-align: center;
-        font-size: 1.6rem;
+        margin-top: 8rem;
       }
       .marival-details {
         font-family: LatoHairLine;
@@ -161,14 +154,19 @@ const mobileContent = (
         color: #caa16e;
       }
     `}</style>
-  </div>
+  </React.Fragment>
 )
 
 export const WhenSectionMobile = props => (
   <MobileLayout
     id="when-section"
-    backgroundColor="#caa16e"
+    style={{
+      backgroundColor: '#caa16e',
+      height: props.height + 100,
+      zIndex: 1,
+      marginTop: '-5rem',
+    }}
     content={mobileContent}
-    height={props.height}
+    className="section clip-path-1"
   />
 )

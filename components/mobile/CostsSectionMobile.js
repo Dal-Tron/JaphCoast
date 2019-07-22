@@ -2,11 +2,12 @@ export const CostsSectionMobile = props => (
   <div
     id="costs-section"
     className="section section-five"
-    style={{ height: props.height + 160 }}
+    style={{ height: props.height + 290 }}
   >
     <div className="costs-wrapper abs">
       <div className="costs-container">
-        <div className="title title-five">Booking</div>
+        <div className="mobile-booking" />
+        <div className="title mobile-title booking-title">Booking</div>
         <div className="title dates-container">
           <div className="required">$500 USD deposit is required</div>
           <div className="cost-date">September 3rd, 2019</div>
@@ -57,6 +58,7 @@ export const CostsSectionMobile = props => (
         </div>
         <div className="final-email">
           <a href="mailto:holly.graves@flightcentre.ca">
+            <div className="mail-icon" />
             holly.graves@flightcentre.ca
           </a>
         </div>
@@ -64,10 +66,24 @@ export const CostsSectionMobile = props => (
     </div>
     <style jsx>{`
       .section-five {
-        background: rgba(110, 104, 148, 0.9);
+        background: rgba(110, 104, 148);
+        margin-top: -5rem;
       }
       .costs-wrapper {
         min-width: 30rem;
+      }
+      .mobile-booking {
+        background-image: url(/static/images/booking.svg);
+        width: 10rem;
+        height: 10rem;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-top: 6rem;
+      }
+      .booking-title {
+        margin-bottom: 1rem;
       }
       .costs-container {
         position: relative;
@@ -79,11 +95,6 @@ export const CostsSectionMobile = props => (
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 3px;
-      }
-      .title-five {
-        margin-bottom: 0.5rem;
-        text-align: center;
-        font-size: 1.6rem;
       }
       .title-five-two {
         margin-bottom: 0.5rem;
@@ -139,6 +150,14 @@ export const CostsSectionMobile = props => (
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 3px;
+      }
+      .mail-icon {
+        background-image: url(/static/images/mail.svg);
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
       }
     `}</style>
   </div>

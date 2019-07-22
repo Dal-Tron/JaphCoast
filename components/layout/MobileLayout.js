@@ -1,9 +1,5 @@
 const MobileLayout = props => (
-  <div
-    id={props.id}
-    style={{ backgroundColor: props.backgroundColor, height: props.height }}
-    className="section"
-  >
+  <div id={props.id} style={props.style} className={props.className}>
     <div className="mobile-content-container abs">
       <div className="wrapper">{props.content}</div>
     </div>
