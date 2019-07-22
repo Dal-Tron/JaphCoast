@@ -1,11 +1,10 @@
 const MobileLayout = props => (
   <div id={props.id} style={props.style} className={props.className}>
-    <div className="mobile-content-container abs">
+    <div className="mobile-content-container">
       <div className="wrapper">{props.content}</div>
     </div>
     <style jsx>{`
       .mobile-content-container {
-        height: 100%;
         padding-left: 5%;
         padding-right: 5%;
       }

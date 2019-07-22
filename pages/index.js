@@ -44,7 +44,7 @@ class Index extends Component {
         <IntroSection height={height} />
         <PhotoSection height={height} />
         {this.state.width < 650 ? (
-          <InfoSectionMobile height={height} />
+          <InfoSectionMobile height={height + 240} />
         ) : (
           <InfoSection height={height} />
         )}
@@ -68,6 +68,10 @@ class Index extends Component {
             src: url('/static/fonts/Lato-Hairline.ttf') format('truetype');
           }
           @font-face {
+            font-family: LatoLight;
+            src: url('/static/fonts/Lato-Light.ttf') format('truetype');
+          }
+          @font-face {
             font-family: Laila;
             src: url('/static/fonts/Laila-Regular.ttf') format('truetype');
           }
@@ -82,6 +86,7 @@ class Index extends Component {
             overflow-y: scroll;
             font-size: 62.5%;
             background-color: #7c769e;
+            font-family: LatoLight, serif;
           }
           a {
             text-decoration: none;
@@ -95,6 +100,9 @@ class Index extends Component {
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
           }
+          .align-left {
+            text-align: left;
+          }
           .section {
             position: relative;
             text-align: center;
@@ -103,51 +111,78 @@ class Index extends Component {
             height: 100%;
           }
           .title {
-            font-size: 3rem;
-            color: #c2d2f5;
-            font-family: LatoHairLine;
             text-transform: uppercase;
             font-weight: 400;
             letter-spacing: 3px;
+            min-width: 35rem;
           }
-          .mobile-title {
+          .title-1 {
+            font-size: 5rem;
+            color: #c2d2f5;
+          }
+          .title-2 {
+            font-size: 4rem;
             color: white;
-            text-align: center;
-            font-size: 2.6rem;
+          }
+          .title-3 {
+            color: white;
+            font-size: 3rem;
+          }
+          .title-4 {
+            color: white;
+            font-size: 2rem;
+          }
+          .title-5 {
+            color: white;
+            font-size: 1rem;
+          }
+          .title-left {
+            text-align: left;
+          }
+          .subtitle {
+            letter-spacing: 1px;
+            font-weight: 800;
+          }
+          .subtitle-1 {
+            color: #c2d2f5;
+            font-size: 2.4rem;
+          }
+          .subtitle-2 {
+            color: white;
+            font-size: 2.4rem;
+          }
+          .subtitle-3 {
+            color: white;
+            font-size: 1.8rem;
           }
           .first-letter {
-            font-size: 2.2rem;
+            font-size: 3rem;
             display: inline-block;
             font-family: Laila, serif;
             letter-spacing: 0px;
           }
-          .first-letter-mobile {
-            font-size: 1.2rem;
-            display: inline-block;
-            font-family: Laila, serif;
-            letter-spacing: 0px;
+          .font-westbury {
+            font-family: WestburySignature;
           }
-          .main-button {
-            font-family: LatoHairLine;
+          .button {
             text-transform: uppercase;
-            color: #c2d2f5;
-            font-size: 2rem;
-            border: 1px solid #c2d2f5;
-            width: 220px;
             margin-left: auto;
             margin-right: auto;
             border-radius: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
             cursor: pointer;
             text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            width: 20rem;
           }
-          .main-button:hover {
-            background-color: #c2d2f5;
-            color: rgba(110, 104, 148, 1);
+          .button-1 {
+            color: #c2d2f5;
+            font-size: 2rem;
+            border: 1px solid #c2d2f5;
           }
-          .secondary-button {
+          .button-2 {
             color: white;
+            font-size: 2rem;
             border: 1px solid white;
           }
           .lastSection {
@@ -157,11 +192,7 @@ class Index extends Component {
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
             clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
           }
-          @media (max-width: 700px) {
-            .main-button {
-              font-size: 1rem;
-              width: 10rem;
-            }
+          @media (max-width: 950px) {
             .lastSection {
               display: block !important;
             }

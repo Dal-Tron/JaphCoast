@@ -5,8 +5,8 @@ import MobileLayout from '../layout/MobileLayout'
 const mobileContent = (
   <div className="info-section">
     <div className="mobile-dolphin" />
-    <div className="title mobile-title">Info</div>
-    <div className="mobile-subtitle">
+    <div className="title title-2 info-title">Info</div>
+    <div className="info-text title-left">
       <div className="first-letter">If</div> you’ve made it this far, there’s a
       good chance we’ve invited you to our wedding in Mexico! There’s also a
       good chance that you’d love to come, but are unable to make it work due to
@@ -16,16 +16,14 @@ const mobileContent = (
       we love you all!
     </div>
     <div
-      className="see-date-button-container"
+      className="see-when-button-container"
       onClick={() => {
         document
           .getElementById('when-section')
           .scrollIntoView({ block: 'start', behavior: 'smooth' })
       }}
     >
-      <div className="main-button secondary-button see-when-button">
-        When & Where
-      </div>
+      <div className="button button-1 see-when-button">When & Where</div>
     </div>
     <style jsx>{`
       .mobile-dolphin {
@@ -38,22 +36,21 @@ const mobileContent = (
         margin-bottom: 2rem;
         margin-top: 6rem;
       }
-      .mobile-subtitle {
-        font-family: LatoHairLine;
-        color: white;
-        font-size: 1.4rem;
-        text-align: center;
+      .info-title {
+        margin-bottom: 2rem;
+      }
+      .info-text {
         letter-spacing: 1px;
-        font-weight: 400;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        font-weight: 800;
+        color: white;
+        font-size: 2rem;
+      }
+      .see-when-button-container {
+        height: 15rem;
       }
       .see-when-button {
         margin-top: 4rem;
-      }
-      .see-when-button:hover {
-        background-color: #e5f6ff;
-        color: #44bee0;
+        margin-bottom: 4rem;
       }
     `}</style>
   </div>
@@ -62,7 +59,7 @@ const mobileContent = (
 export const InfoSectionMobile = props => (
   <MobileLayout
     id="info-section"
-    style={{ backgroundColor: '#5189BC', height: props.height, zIndex: 2 }}
+    style={{ backgroundColor: '#5189BC', zIndex: 2 }}
     content={mobileContent}
     className="section clip-path-1"
   />

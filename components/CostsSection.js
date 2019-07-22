@@ -127,9 +127,6 @@ export const CostsSection = props => (
         height: 1.5rem;
         line-height: 3.5rem;
         margin-bottom: 1rem;
-        height: 1.5rem;
-        line-height: 3.5rem;
-        margin-bottom: 1rem;
       }
       .final-note {
         width: 60rem;

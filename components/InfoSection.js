@@ -4,8 +4,8 @@ import SplitLayout from './layout/SplitLayout'
 
 const leftElement = (
   <React.Fragment>
-    <h1 className="title title-three">Info</h1>
-    <div className="subtitle-three">
+    <div className="title title-2 title-left">Info</div>
+    <div className="subtitle subtitle-1 title-left">
       <div className="first-letter">If</div> you’ve made it this far, there’s a
       good chance we’ve invited you to our wedding in Mexico! There’s also a
       good chance that you’d love to come, but are unable to make it work due to
@@ -20,15 +20,6 @@ const leftElement = (
         text-align: left;
         padding-left: 10rem;
       }
-      .subtitle-three {
-        font-family: LatoHairLine;
-        color: white;
-        font-size: 2.4rem;
-        text-align: left;
-        padding-left: 10rem;
-        letter-spacing: 1px;
-        font-weight: 800;
-      }
       @media (max-width: 1200px) {
         .title-three {
           padding-left: 2rem;
@@ -36,14 +27,6 @@ const leftElement = (
         .subtitle-three {
           padding-left: 2rem;
           font-size: 1.8rem;
-        }
-      }
-      @media (max-width: 950px) {
-        .title-three {
-          padding-left: 5rem;
-        }
-        .subtitle-three: {
-          padding-left: 4rem;
         }
       }
     `}</style>
