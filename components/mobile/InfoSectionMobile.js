@@ -56,7 +56,7 @@ const mobileContent = (
   </div>
 )
 
-export const InfoSectionMobile = props => (
+export const InfoSectionMobile = () => (
   <MobileLayout
     id="info-section"
     style={{ backgroundColor: '#5189BC', zIndex: 2 }}

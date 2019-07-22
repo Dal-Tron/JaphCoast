@@ -5,7 +5,7 @@ import SplitLayout from './layout/SplitLayout'
 const leftElement = (
   <React.Fragment>
     <div className="title title-2 title-left">Info</div>
-    <div className="subtitle subtitle-1 title-left">
+    <div className="title-4 title-left">
       <div className="first-letter">If</div> you’ve made it this far, there’s a
       good chance we’ve invited you to our wedding in Mexico! There’s also a
       good chance that you’d love to come, but are unable to make it work due to
@@ -14,22 +14,7 @@ const leftElement = (
       be having at home for those of you that can’t make it to Mexico, because
       we love you all!
     </div>
-    <style jsx>{`
-      .title-three {
-        color: white;
-        text-align: left;
-        padding-left: 10rem;
-      }
-      @media (max-width: 1200px) {
-        .title-three {
-          padding-left: 2rem;
-        }
-        .subtitle-three {
-          padding-left: 2rem;
-          font-size: 1.8rem;
-        }
-      }
-    `}</style>
+    <style jsx>{``}</style>
   </React.Fragment>
 )
 
@@ -44,9 +29,7 @@ const rightElement = (
           .scrollIntoView({ block: 'end', behavior: 'smooth' })
       }}
     >
-      <div className="main-button secondary-button see-date-button">
-        When & Where
-      </div>
+      <div className="button button-1 see-date-button">When & Where</div>
     </div>
     <style jsx>{`
       .dolphin {
@@ -60,7 +43,7 @@ const rightElement = (
         margin-top: 4rem;
       }
       .see-date-button {
-        width: 320px;
+        width: 22rem;
       }
       .see-date-button:hover {
         background-color: #e5f6ff;
@@ -77,7 +60,6 @@ export const InfoSection = props => (
       backgroundColor="#44BEE0"
       leftElement={leftElement}
       rightElement={rightElement}
-      height={props.height}
     />
   </React.Fragment>
 )

@@ -32,7 +32,8 @@ class Index extends Component {
   }
 
   render() {
-    const { height } = this.state
+    const { height, width } = this.state
+    const showMobile = width < 700
     return (
       <div className="section-container">
         <Head>
@@ -43,21 +44,9 @@ class Index extends Component {
         </Head>
         <IntroSection height={height} />
         <PhotoSection height={height} />
-        {this.state.width < 650 ? (
-          <InfoSectionMobile height={height + 240} />
-        ) : (
-          <InfoSection height={height} />
-        )}
-        {this.state.width < 650 ? (
-          <WhenSectionMobile height={height + 100} />
-        ) : (
-          <WhenSection height={height} />
-        )}
-        {this.state.width < 650 ? (
-          <CostsSectionMobile height={height} />
-        ) : (
-          <CostsSection height={height} />
-        )}
+        {showMobile ? <InfoSectionMobile /> : <InfoSection />}
+        {showMobile ? <WhenSectionMobile /> : <WhenSection />}
+        {showMobile ? <CostsSectionMobile /> : <CostsSection />}
         <style jsx global>{`
           @font-face {
             font-family: WestburySignature;

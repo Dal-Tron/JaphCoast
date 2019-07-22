@@ -35,7 +35,7 @@ const IntroSection = props => (
         position: absolute;
         width: 100%;
         text-align: center;
-        bottom: 20rem;
+        bottom: 10rem;
       }
       @media (max-width: 950px) {
         .see-info-button-container {

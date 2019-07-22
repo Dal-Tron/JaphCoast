@@ -18,7 +18,7 @@ const mobileContent = (
         <div className="marival-subtitle">Nuevo Vallarta</div>
         <div className="marival-subtitle">Mexico</div>
       </div>
-      <div className="images-and-bullets">
+      <div className="images-and-bullets-container">
         <div className="mobile-image-container">
           <a href="https://www.marival.com/" target="_blank">
             <div className="mobile-mexico" />
@@ -73,6 +73,11 @@ const mobileContent = (
       .marival-title {
         font-size: 3rem;
       }
+      .images-and-bullets-container {
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
       .mobile-image-container {
         width: 50%;
         float: left;
@@ -114,7 +119,7 @@ const mobileContent = (
   </React.Fragment>
 )
 
-export const WhenSectionMobile = props => (
+export const WhenSectionMobile = () => (
   <MobileLayout
     id="when-section"
     style={{

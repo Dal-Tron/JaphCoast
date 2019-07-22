@@ -59,6 +59,8 @@ export const CostsSectionMobile = props => (
     <style jsx>{`
       .section-five {
         background: #7c769e;
+        padding-top: 10rem;
+        margin-top: -5rem;
       }
       .mobile-booking {
         background-image: url(/static/images/booking.svg);

@@ -5,7 +5,7 @@ import SplitLayout from './layout/SplitLayout'
 const leftElement = (
   <React.Fragment>
     <div className="cake" />
-    <div className="main-button secondary-button see-marival-button">
+    <div className="button button-2 see-marival-button">
       <a href="https://www.marival.com/" target="_blank">
         Marival
       </a>
@@ -60,13 +60,13 @@ const leftElement = (
 
 const rightElement = (
   <React.Fragment>
-    <h1 className="title title-four">When & Where</h1>
-    <div className="subtitle-four">
+    <div className="title title-2 when-title">When & Where</div>
+    <div className="subtitle-3 when-details">
       <div className="first-letter">For</div> those of you that are able to
       come, we have organized our wedding at the Marival in Nuevo Vallarta, just
       outside of Puerto Vallarta.
       <div>
-        The package we’ve organized costs just under{' '}
+        The package we’ve organized costs just under
         <div className="first-letter">$1600</div>, and includes:
         <div dir="rtl">
           <ul>
@@ -87,42 +87,23 @@ const rightElement = (
             .scrollIntoView({ block: 'start', behavior: 'smooth' })
         }}
       >
-        <div className="main-button see-costs-button">Costs</div>
+        <div className="button button-2 see-costs-button">Costs</div>
       </div>
     </div>
     <style jsx>{`
-      .title-four {
-        color: white;
+      .when-title {
         text-align: right;
-        padding-right: 10rem;
+        margin-left: -2rem;
       }
-      .subtitle-four {
-        font-family: LatoHairLine;
-        color: white;
-        font-size: 2.4rem;
+      .when-details {
         text-align: right;
-        padding-right: 10rem;
-        letter-spacing: 1px;
-        font-weight: 800;
       }
       .see-costs-button {
-        color: white;
-        font-size: 2rem;
-        border: 1px solid white;
         margin-top: 2rem;
       }
       .see-costs-button:hover {
         background-color: #e5f6ff;
         color: #e4c39a;
-      }
-      @media (max-width: 1200px) {
-        .title-four {
-          padding-right: 2rem;
-        }
-        .subtitle-four {
-          padding-right: 2rem;
-          font-size: 1.6rem;
-        }
       }
     `}</style>
   </React.Fragment>
@@ -134,6 +115,5 @@ export const WhenSection = props => (
     backgroundColor="#caa16e"
     leftElement={leftElement}
     rightElement={rightElement}
-    height={props.height}
   />
 )
