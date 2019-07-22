@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
-import SectionOne from '../components/SectionOne'
-import SectionTwo from '../components/SectionTwo'
-import { SectionThree, MobileSectionThree } from '../components/SectionThree'
-import { SectionFour, MobileSectionFour } from '../components/SectionFour'
-import { SectionFive, MobileSectionFive } from '../components/SectionFive'
+import IntroSection from '../components/IntroSection'
+import PhotoSection from '../components/PhotoSection'
+import { InfoSection } from '../components/InfoSection'
+import { InfoSectionMobile } from '../components/mobile/InfoSectionMobile'
+import { WhenSection } from '../components/WhenSection'
+import { WhenSectionMobile } from '../components/mobile/WhenSectionMobile'
+import { CostsSection } from '../components/CostsSection'
+import { CostsSectionMobile } from '../components/mobile/CostsSectionMobile'
 
 class Index extends Component {
   state = {
@@ -29,6 +32,7 @@ class Index extends Component {
   }
 
   render() {
+    const { height } = this.state
     return (
       <div className="section-container">
         <Head>
@@ -37,11 +41,23 @@ class Index extends Component {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        {/* <SectionOne /> */}
-        {/* <SectionTwo /> */}
-        {/* {this.state.width < 650 ? <MobileSectionThree /> : <SectionThree />} */}
-        {/* {this.state.width < 650 ? <MobileSectionFour /> : <SectionFour />} */}
-        {this.state.width < 650 ? <MobileSectionFive /> : <SectionFive />}
+        <IntroSection height={height} />
+        <PhotoSection height={height} />
+        {this.state.width < 650 ? (
+          <InfoSectionMobile height={height} />
+        ) : (
+          <InfoSection height={height} />
+        )}
+        {this.state.width < 650 ? (
+          <WhenSectionMobile height={height} />
+        ) : (
+          <WhenSection height={height} />
+        )}
+        {this.state.width < 650 ? (
+          <CostsSectionMobile height={height} />
+        ) : (
+          <CostsSection height={height} />
+        )}
         <style jsx global>{`
           @font-face {
             font-family: WestburySignature;
@@ -63,7 +79,7 @@ class Index extends Component {
             margin: 0;
             padding: 0;
             height: 100vh;
-            overflow: hidden;
+            overflow-y: scroll;
             font-size: 62.5%;
           }
           a {
@@ -78,24 +94,9 @@ class Index extends Component {
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
           }
-          .section-container {
-            -ms-scroll-snap-type: mandatory;
-            scroll-snap-type: mandatory;
-            -ms-scroll-snap-points-y: repeat(100vh);
-            scroll-snap-points-y: repeat(100vh);
-            -ms-scroll-snap-type: y mandatory;
-            scroll-snap-type: y mandatory;
-            overflow: scroll;
-            height: 100vh;
-          }
-          section {
-            height: 100vh;
-            scroll-snap-align: start;
+          .section {
             position: relative;
             text-align: center;
-            background-size: cover;
-            background-repeat: repeat-none;
-            background-position: center center;
           }
           .content-container {
             height: 100%;
