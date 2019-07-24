@@ -33,7 +33,6 @@ const mobileContent = (
               <li>airfare</li>
               <li>airport shuttles</li>
               <li>one checked bag</li>
-              <li>outside of Puerto Vallarta</li>
             </ul>
           </div>
         </div>
