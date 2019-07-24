@@ -5,7 +5,7 @@ export const CostsSection = props => (
       <div className="title title-2 deposit-title">Deposit Dates</div>
       <div className="title title-4 left-container">
         <div className="required left-item">$500 USD deposit by</div>
-        <div className="required left-item">The full amount is due by</div>
+        <div className="required left-item">Full amount is due by</div>
       </div>
       <div className="title title-4 right-container">
         <div className="cost-date right-item">September 3rd, 2019</div>
