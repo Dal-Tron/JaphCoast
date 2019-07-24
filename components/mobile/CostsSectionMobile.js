@@ -51,8 +51,8 @@ export const CostsSectionMobile = props => (
       </div>
       <div className="final-email">
         <a href="mailto:holly.graves@flightcentre.ca">
-          <div className="mail-icon" />
           holly.graves@flightcentre.ca
+          <div className="mail-icon" />
         </a>
       </div>
     </div>
