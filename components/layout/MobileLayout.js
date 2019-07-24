@@ -14,6 +14,11 @@ const MobileLayout = props => (
         margin-left: auto;
         margin-right: auto;
       }
+      @media (max-width: 600px) {
+        .wrapper {
+          min-width: 30rem;
+        }
+      }
     `}</style>
   </div>
 )

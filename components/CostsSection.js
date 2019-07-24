@@ -4,7 +4,7 @@ export const CostsSection = props => (
       <div className="mobile-booking" />
       <div className="title title-2 deposit-title">Deposit Dates</div>
       <div className="title title-4 left-container">
-        <div className="required left-item">$500 USD deposit is required</div>
+        <div className="required left-item">$500 USD deposit by</div>
         <div className="required left-item">The full amount is due by</div>
       </div>
       <div className="title title-4 right-container">
@@ -152,7 +152,7 @@ export const CostsSection = props => (
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 3px;
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
       }
       .mail-icon {
         background-image: url(/static/images/mail.svg);
@@ -161,6 +161,16 @@ export const CostsSection = props => (
         background-size: cover;
         margin-left: auto;
         margin-right: auto;
+      }
+      @media (max-width: 1600px) {
+        .costs-wrapper {
+          min-width: 70rem;
+        }
+      }
+      @media (max-width: 700px) {
+        .see-info-button-container {
+          bottom: 8rem;
+        }
       }
     `}</style>
   </div>

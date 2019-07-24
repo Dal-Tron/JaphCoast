@@ -73,6 +73,7 @@ class Index extends Component {
             padding: 0;
             height: 100vh;
             overflow-y: scroll;
+            overflow-x: hidden;
             font-size: 62.5%;
             background-color: #7c769e;
             font-family: LatoLight, serif;
@@ -157,7 +158,7 @@ class Index extends Component {
             text-transform: uppercase;
             margin-left: auto;
             margin-right: auto;
-            border-radius: 50px;
+            border-radius: 5rem;
             cursor: pointer;
             text-align: center;
             padding-top: 1rem;
@@ -184,6 +185,11 @@ class Index extends Component {
           @media (max-width: 950px) {
             .lastSection {
               display: block !important;
+            }
+          }
+          @media (max-width: 600px) {
+            .title {
+              min-width: 30rem;
             }
           }
         `}</style>
