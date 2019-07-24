@@ -6,7 +6,7 @@ export const CostsSectionMobile = props => (
       <div className="title dates-container">
         <div>$500 USD deposit is required</div>
         <div className="cost-date">September 3rd, 2019</div>
-        <div>The full amount is due</div>
+        <div>Full amount is due</div>
         <div className="cost-date">March 4th, 2020</div>
       </div>
       <div className="title title-3 total-cost-title">Total Cost</div>
