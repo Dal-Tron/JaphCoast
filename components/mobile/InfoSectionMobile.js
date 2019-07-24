@@ -10,10 +10,8 @@ const mobileContent = (
       <div className="first-letter">If</div> you’ve made it this far, there’s a
       good chance we’ve invited you to our wedding in Mexico! There’s also a
       good chance that you’d love to come, but are unable to make it work due to
-      cost or time constraints or any other reason, and we understand that and
-      will be sending information out to everyone for a Ceremony and Dance we’ll
-      be having at home for those of you that can’t make it to Mexico, because
-      we love you all!
+      cost or time constraints or any other reason, and we totally understand
+      that, and take no offense or anything like that! We love you all!
     </div>
     <div
       className="see-when-button-container"
