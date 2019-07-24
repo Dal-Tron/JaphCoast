@@ -51,8 +51,10 @@ export const CostsSection = props => (
       <div className="title final-note">
         Bookings can be done through our travel agent Holly Graves at
         <div className="final-email">
-          <div className="mail-icon" />
-          holly.graves@flightcentre.ca
+          <a href="mailto:holly.graves@flightcentre.ca">
+            <div className="mail-icon" />
+            holly.graves@flightcentre.ca
+          </a>
         </div>
       </div>
     </div>
