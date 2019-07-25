@@ -39,40 +39,40 @@ const PhotoSection = props => (
       }
 
       .tile1 {
-        background-image: url('http://bit.ly/2P0xBZE');
+        background-image: url('/static/images/raph_and_jeff_1.jpg');
       }
       .tile2 {
-        background-image: url('http://bit.ly/2UHd55z');
+        background-image: url('/static/images/raph_ocean.jpg');
       }
       .tile3 {
-        background-image: url('http://bit.ly/2Kk5fLj');
+        background-image: url('/static/images/young_couple_grass.jpg');
       }
       .tile4 {
-        background-image: url('http://bit.ly/2CZ1eGb');
+        background-image: url('/static/images/jeff_drink.jpg');
       }
       .tile5 {
-        background-image: url('https://bit.ly/2ImJpEA');
+        background-image: url('/static/images/raph_jeff_sand.jpg');
       }
       .tile6 {
-        background-image: url('https://bit.ly/2uWJCX8');
+        background-image: url('/static/images/raph_cat.jpg');
       }
       .tile7 {
-        background-image: url('http://bit.ly/2P131ix');
+        background-image: url('/static/images/raph_makeup.jpg');
       }
       .tile8 {
-        background-image: url('https://bit.ly/2IiLdhG');
+        background-image: url('/static/images/raph_jeff_flower_print.jpg');
       }
       .tile9 {
-        background-image: url('http://bit.ly/2uSDhMa');
+        background-image: url('/static/images/jeff_makeup.jpg');
       }
       .tile10 {
-        background-image: url('http://bit.ly/2I89bwY');
+        background-image: url('/static/images/jeff_raph_ocean.jpg');
       }
       .tile11 {
-        background-image: url('http://bit.ly/2VtwrIQ');
+        background-image: url('/static/images/jeff_raph_mexico_ocean.jpg');
       }
       .tile12 {
-        background-image: url('http://bit.ly/2Z2GuXB');
+        background-image: url('/static/images/raph_jeff_music.jpg');
         background-position-y: 100% !important;
       }
 
