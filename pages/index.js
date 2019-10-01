@@ -8,6 +8,7 @@ import { WhenSection } from '../components/WhenSection'
 import { WhenSectionMobile } from '../components/mobile/WhenSectionMobile'
 import { CostsSection } from '../components/CostsSection'
 import { CostsSectionMobile } from '../components/mobile/CostsSectionMobile'
+import FaqSection from '../components/FaqSection'
 
 class Index extends Component {
   state = {
@@ -47,6 +48,7 @@ class Index extends Component {
         {showMobile ? <InfoSectionMobile /> : <InfoSection />}
         {showMobile ? <WhenSectionMobile /> : <WhenSection />}
         {showMobile ? <CostsSectionMobile /> : <CostsSection />}
+        <FaqSection />
         <style jsx global>{`
           @font-face {
             font-family: WestburySignature;

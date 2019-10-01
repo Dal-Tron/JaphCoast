@@ -2,16 +2,22 @@ export const CostsSection = props => (
   <div id="costs-section" className="section section-five">
     <div className="costs-wrapper">
       <div className="mobile-booking" />
-      <div className="title title-2 deposit-title">Deposit Dates</div>
+      <div className="title title-2 deposit-title">
+        Booking
+        <div className="title-4">All prices in CAD</div>
+      </div>
       <div className="title title-4 left-container">
-        <div className="required left-item">$500 USD deposit by</div>
+        <div className="required left-item">$250 deposit by</div>
         <div className="required left-item">Full amount is due by</div>
       </div>
       <div className="title title-4 right-container">
         <div className="cost-date right-item">September 3rd, 2019</div>
         <div className="cost-date right-item">March 4th, 2020</div>
       </div>
-      <div className="title title-3">Total Cost</div>]{' '}
+      <div className="title title-3">
+        Total Cost
+        <div className="title-4">*based on dual occupancy*</div>
+      </div>
       <div className="sub-container">
         <div className="title location-title">Leaving From Kelowna</div>
         <div className="title-4 left">
@@ -39,9 +45,12 @@ export const CostsSection = props => (
         </div>
       </div>
       <div className="title final-note">
-        All rates include round trip airfare, round trip airport transfers, 7
-        nights all-inclusive accommodation, one checked bag per person and seat
-        selection with the group towards the rear of the aircraft.
+        All rates are based on dual occupancy and include round trip airfare,
+        round trip airport transfers, 7 nights all-inclusive accommodation, one
+        checked bag per person and seat selection with the group towards the
+        rear of the aircraft. Please feel free to email us at
+        raphaelfroese@gmail.com or jbdobson11@gmail.com if you want help finding
+        a roommate!
       </div>
       <div className="title final-note">
         This pricing is Guaranteed for the first 20 people who pay the deposit,
